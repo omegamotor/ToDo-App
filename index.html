@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body style="background-color: #7E9C9C;">
+    <div class="project">
+        <div class="top">
+            <h1 class="app-title">TODO - App</h1>
+        </div>
+
+        <div class="mid">
+            <label for="todoInput">Do zrobienia</label>
+
+            <input type="text" name="item" id="todoInput" class="input-item">
+            <button id="addToList" class="btn-add">Dodaj</button>
+            <small class="error" id="error">Proszę wpisać element!</small>
+        </div>
+
+        <div class="bottom">
+            <p>Lista:</p>
+
+            <div id="list" class="list-items">
+                <div class="list-item"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <img src="./img/basket1.png" class="img" alt="">
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .app-title {
+        margin-bottom: 1rem;
+    }
+
+    body {
+        margin: none;
+        padding: none;
+        /*background-color: rgb(179, 179, 179);*/
+        width: 100vw;
+        height: 100vh;
+        font-family: cursive;
+        margin: 0;
+        /*background-color: rgba(74, 158, 158, 1);
+        background-image: radial-gradient(circle, rgba(74, 158, 158, 1) 0%, rgba(27, 215, 215, 1) 50%, rgba(117, 255, 225, 1) 100%);
+    */
+        background-image: url('./img/wood.jpg');
+    }
+
+    .btn-add {
+        border-radius: 15px;
+        width: 88px;
+        height: 1.9rem;
+        font-size: 1rem;
+        background-color: #48f852;
+        cursor: pointer;
+        margin: 1rem 0;
+    }
+
+    .error {
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: red;
+        font-weight: bold;
+        width: 150px
+    }
+
+    @media only screen and (max-width: 373px) {
+        .error {
+            bottom: 47px;
+        }
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .mid {
+        position: relative;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    .list-item {
+        padding: 15px 10px;
+        background: #ffe9cf;
+        ;
+        margin: 15px;
+        border-radius: 15px;
+        text-align: left;
+        position: relative;
+    }
+
+
+
+    @media only screen and (min-width: 500px) {
+        .list-items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .list-item {
+            min-width: 20vw;
+        }
+    }
+
+    .input-item {
+        border-radius: 15px;
+        background-color: #ffe9cf;
+        height: 20px;
+        padding: 5px;
+    }
+
+    .btn-del {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 15px;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .img {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 80vw;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .img {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            width: 40vh;
+        }
+    }
+</style>
