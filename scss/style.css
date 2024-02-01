@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app-title {
+  padding: 2rem 0;
+  color: white;
+}
+
+body {
+  margin: none;
+  padding: none;
+  /*background-color: rgb(179, 179, 179);*/
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  /*background-color: rgba(74, 158, 158, 1);
+      background-image: radial-gradient(circle, rgba(74, 158, 158, 1) 0%, rgba(27, 215, 215, 1) 50%, rgba(117, 255, 225, 1) 100%);
+  */
+  /* background-image: url('./img/wood.jpg'); */
+  background: radial-gradient(circle, rgb(88, 88, 88) 0%, rgb(18, 18, 18) 100%);
+}
+
+.btn-add {
+  border-radius: 5px;
+  width: 88px;
+  height: 1.9rem;
+  font-size: 1rem;
+  background-color: rgb(84, 171, 255);
+  color: white;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.error {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-weight: bold;
+  width: 150px;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 373px) {
+  .error {
+    bottom: 47px;
+  }
+}
+.d-none {
+  display: none;
+}
+
+.mid {
+  position: relative;
+}
+
+.mid-content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  min-height: 65px;
+  box-shadow: 3px 3px 10px black;
+}
+
+.project {
+  text-align: center;
+}
+
+.list-item {
+  padding: 15px 10px;
+  background: #fff;
+  margin: 15px;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+  box-shadow: 3px 3px 10px black;
+}
+
+.p-list {
+  padding: 1rem 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (min-width: 500px) {
+  .list-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .list-item {
+    min-width: 20vw;
+  }
+}
+.input-item {
+  border-radius: 5px;
+  height: 20px;
+  padding: 5px;
+}
+
+.btn-del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.img {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 80vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .img {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 40vh;
+  }
+}/*# sourceMappingURL=style.css.map */
